@@ -1,0 +1,469 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.header {
+  margin-bottom: 25px;
+}
+
+.college-name {
+  color: #315c8e;
+  font-size: 42px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.autonomous {
+  color: #315c8e;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.address {
+  color: #315c8e;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-wrapper {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.subtitle {
+  color: #333333;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.semester-btn {
+  background: linear-gradient(to bottom, #cf2e35, #b42128);
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px 0 0 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+}
+
+.semester-btn::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 15px;
+  background: linear-gradient(to bottom, #9d1b22, #7a1217);
+  box-shadow: inset 3px 0 5px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.semester-btn-wrapper {
+  filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.4));
+  display: inline-block;
+}
+
+.semester-btn-text {
+  position: relative;
+  z-index: 2;
+}
+
+.semester-btn:hover {
+  background: linear-gradient(to bottom, #df373e, #c6282f);
+}
+
+/* Form Page Styles */
+.form-page {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-header {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 40px;
+}
+
+.form-college {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.form-auto {
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.form-coe {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.form-title {
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  max-width: 900px;
+}
+
+.form-box {
+  background-color: #d1ddce;
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 13px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.form-input {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  width: 100%;
+  outline: none;
+}
+
+.form-submit {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.form-submit:hover {
+  background-color: #4cae4c;
+}
+
+.form-back {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.2s;
+}
+
+.form-back:hover {
+  background-color: #4cae4c;
+}
+
+/* Result Page Styles */
+.result-page {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 40px;
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.result-logo {
+  width: 130px;
+  height: auto;
+  margin-right: -130px;
+  /* Quick hack to center text easily */
+  position: relative;
+  z-index: 10;
+}
+
+.result-header-text {
+  flex: 1;
+  text-align: center;
+  color: #444;
+}
+
+.result-header-text h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.result-header-text p {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.result-header-text h3 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.student-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.info-row {
+  display: flex;
+}
+
+.info-label {
+  width: 250px;
+  color: #444;
+}
+
+.info-value {
+  color: #444;
+}
+
+.blue-text {
+  color: #1a0dab;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  font-size: 13px;
+}
+
+.result-table th,
+.result-table td {
+  border: 1px solid #dcdcdc;
+  padding: 8px 10px;
+  text-align: center;
+  color: #333;
+}
+
+.result-table th {
+  background-color: #800080;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.result-table td.left-align {
+  text-align: left;
+}
+
+.revaluation-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.rev-title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.rev-date {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.rev-warning {
+  font-size: 13px;
+  color: #444;
+  margin-top: 5px;
+}
+
+.result-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.action-btn {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 8px 24px;
+  font-size: 14px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background-color: #4cae4c;
+}
+
+/* Responsive Design for Mobile & Tablets */
+@media (max-width: 768px) {
+  body {
+    padding-top: 30px;
+  }
+
+  .college-name {
+    font-size: 26px;
+  }
+
+  .autonomous {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .address {
+    font-size: 14px;
+  }
+
+  .logo {
+    max-width: 140px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .form-box {
+    padding: 20px;
+  }
+
+  .form-college {
+    font-size: 18px;
+  }
+
+  .form-coe,
+  .form-title {
+    font-size: 14px;
+  }
+
+  .result-page {
+    padding: 0 15px;
+  }
+
+  .result-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .result-logo {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100px;
+  }
+
+  .result-header-text h2 {
+    font-size: 16px;
+  }
+
+  .result-header-text p,
+  .result-header-text h3 {
+    font-size: 13px;
+  }
+
+  .info-row {
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+
+  .info-label {
+    width: 100%;
+    margin-bottom: 4px;
+    color: #666;
+    font-size: 12px;
+  }
+
+  .info-value {
+    font-size: 14px;
+  }
+
+  .table-responsive {
+    width: 100%;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+  }
+
+  .result-table {
+    min-width: 100%;
+    font-size: 10px;
+  }
+
+  .result-table th,
+  .result-table td {
+    padding: 6px 4px;
+    word-break: break-word;
+  }
+
+  .result-actions {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .action-btn {
+    width: auto;
+    padding: 6px 16px;
+    font-size: 12px;
+  }
+}
